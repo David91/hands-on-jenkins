@@ -22,6 +22,10 @@ pipeline {
         stage("Deploy - Dev") {
             steps { deploy('dev') }
 		}
+	    
+	    stage("Delete workspace") {
+		deleteDir()    
+	    }
 
 	}
 }
