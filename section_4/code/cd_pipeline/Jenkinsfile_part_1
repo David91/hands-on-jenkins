@@ -24,7 +24,9 @@ pipeline {
 		}
 	    
 	    stage("Delete workspace") {
-		deleteDir()    
+		    steps {
+			deleteDir()
+		    }
 	    }
 
 	}
